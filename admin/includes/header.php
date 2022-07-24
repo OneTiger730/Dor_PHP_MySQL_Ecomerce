@@ -18,6 +18,6 @@
       <link rel='stylesheet' href='src/css/nprogress.css'/>
       <!-- My own style -->
       <link rel="stylesheet" href="src/css/style.css">
-
+      <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
     </head>
   <body>

@@ -145,6 +145,4 @@ if ($connection->query($queryaddproduct) === TRUE ) {
      $connection->close();
 
 }
-
-
  ?>

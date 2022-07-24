@@ -18,5 +18,6 @@
       <link rel="stylesheet" href="src/css/style.css">
       <!-- Progress bar -->
       <link rel='stylesheet' href='src/css/nprogress.css'/>
+      <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
     </head>
   <body>

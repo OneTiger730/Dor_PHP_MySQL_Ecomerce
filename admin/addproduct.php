@@ -31,9 +31,9 @@ require 'includes/navconnected.php'; }
   <div class="container">
     <div class="row">
         <?php
-        include '../db.php';
+          include '../db.php';
 
-        //get categories
+          //get categories
           $querycategory = "SELECT id, name, icon  FROM category";
           $total = $connection->query($querycategory);
           if ($total->num_rows > 0) {
@@ -42,7 +42,6 @@ require 'includes/navconnected.php'; }
             $id_category = $rowcategory['id'];
             $name_category = $rowcategory['name'];
             $icon_category = $rowcategory['icon'];
-
         ?>
 
         <div class="col s12 m4">

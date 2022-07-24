@@ -1,10 +1,10 @@
 <?php
 
-session_start();
+  session_start();
 
-if ($_SESSION['role'] !== 'admin') {
-  header('Location: ../index');
-}
+  if ($_SESSION['role'] !== 'admin') {
+    header('Location: ../index');
+  }
 
  require 'includes/header.php';
  require 'includes/navconnected.php'; //require $nav;?>
@@ -20,59 +20,60 @@ if ($_SESSION['role'] !== 'admin') {
         </div>
       </nav>
     </div>
-   </div>
+  </div>
 
-<div class="container dashboard">
-  <div class="row">
-         <div class="col s12 m4">
-           <div class="card horizontal">
-             <div class="card-image">
-               <img src="src/img/pixel.png" alt="" />
-             </div>
-             <div class="card-stacked">
-              <div class="card-content">
-                <p>Products & Commands</p>
+  <div class="container dashboard">
+    <div class="row">
+          <div class="col s12 m4">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="src/img/pixel.png" alt="" />
               </div>
-               <div class="card-action">
-                 <a href="infoproduct" class="blue-text">Learn more</a>
-               </div>
-             </div>
-           </div>
-         </div>
-
-         <div class="col s12 m4">
-           <div class="card horizontal">
-             <div class="card-image">
-               <img src="src/img/cat.png" alt="" />
-             </div>
-             <div class="card-stacked">
-        <div class="card-content">
-          <p>Stock</p>
-        </div>
-             <div class="card-action">
-               <a href="products" class="blue-text">Learn more</a>
-             </div>
-             </div>
-
-           </div>
-         </div>
-
-         <div class="col s12 m4">
-           <div class="card horizontal">
-             <div class="card-image">
-               <img src="src/img/user.png" alt="" />
-             </div>
-             <div class="card-stacked">
-              <div class="card-content">
-                <p>Users</p>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>Products & Commands</p>
+                </div>
+                <div class="card-action">
+                  <a href="infoproduct" class="blue-text">Learn more</a>
+                </div>
               </div>
-               <div class="card-action">
-                 <a href="allusers" class="blue-text">Learn more</a>
-               </div>
-             </div>
-           </div>
-         </div>
-         <?php
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="src/img/cat.png" alt="" />
+              </div>
+              <div class="card-stacked">
+          <div class="card-content">
+            <p>Stock</p>
+          </div>
+              <div class="card-action">
+                <a href="products" class="blue-text">Learn more</a>
+              </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="src/img/user.png" alt="" />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>Users</p>
+                </div>
+                <div class="card-action">
+                  <a href="allusers" class="blue-text">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <?php
 
             include '../db.php';
             //get total users
@@ -105,44 +106,45 @@ if ($_SESSION['role'] !== 'admin') {
               }
             }
           ?>
-         <div class="col s12 m4">
-           <div class="card horizontal red lighten-1">
-             <div class="card-stacked">
-              <div class="card-content">
-                <h5 class="white-text"><i class="material-icons left">supervisor_account</i> Total Users</h5>
+          <div class="col s12 m4">
+            <div class="card horizontal red lighten-1">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5 class="white-text"><i class="material-icons left">supervisor_account</i> Total Users</h5>
+                </div>
+                <div class="card-action">
+                  <h5 class="white-text"><?= $totalusers; ?></h5>
+                </div>
               </div>
-               <div class="card-action">
-                 <h5 class="white-text"><?= $totalusers; ?></h5>
-               </div>
-             </div>
-           </div>
-         </div>
+            </div>
+          </div>
 
-         <div class="col s12 m4">
-           <div class="card blue lighten-1 horizontal">
-             <div class="card-stacked">
-              <div class="card-content">
-                <h5 class="white-text"><i class="material-icons left">shopping_cart</i> Total Orders</h5>
+          <div class="col s12 m4">
+            <div class="card blue lighten-1 horizontal">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5 class="white-text"><i class="material-icons left">shopping_cart</i> Total Orders</h5>
+                </div>
+                <div class="card-action">
+                  <h5 class="white-text"><?= $totalorder; ?></h5>
+                </div>
               </div>
-               <div class="card-action">
-                 <h5 class="white-text"><?= $totalorder; ?></h5>
-               </div>
-             </div>
-           </div>
-         </div>
+            </div>
+          </div>
 
-         <div class="col s12 m4">
-           <div class="card green lighten-1 horizontal">
-             <div class="card-stacked">
-              <div class="card-content">
-                <h5 class="white-text"><i class="material-icons left">shopping_cart</i> Total Payments</h5>
+          <div class="col s12 m4">
+            <div class="card green lighten-1 horizontal">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5 class="white-text"><i class="material-icons left">shopping_cart</i> Total Payments</h5>
+                </div>
+                <div class="card-action">
+                  <h5 class="white-text"><?= $totalpaid; ?></h5>
+                </div>
               </div>
-               <div class="card-action">
-                 <h5 class="white-text"><?= $totalpaid; ?></h5>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-</div>
- <?php require 'includes/footer.php'; ?>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  <?php require 'includes/footer.php'; ?>

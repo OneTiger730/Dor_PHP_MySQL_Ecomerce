@@ -11,15 +11,9 @@
 <!-- Main Js -->
 <script type="text/javascript" src='src/js/main.js'></script>
 <script type="text/javascript">
-$(window).load(function() { // makes sure the whole site is loaded
-   NProgress.start();
-   NProgress.inc(0.3);
-   NProgress.done();
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script type="module" src="src/js/index.js"></script>
 
-  $('body').delay(350).css({
-    'overflow': 'visible'
-  });
-})
 </script>
 </body>
 </html>

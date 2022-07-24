@@ -14,11 +14,13 @@
 
    <ul class="center hide-on-large-only">
      <li><a href="index" class="dark-text">SmartShop</a></li>
-
    </ul>
 
    <ul  class="right hide-on-med-and-down">
-       <li><a href="index" class="dark-text">Home</a></li>
+     <li><a href="index" class="dark-text">Home</a></li>
+     <li><a href="#category" class="dark-text">Categories</a></li>
+      <li><a href="#about" class="dark-text">About us</a></li>
+      <li><a href="#contact" class="dark-text">Contact</a></li>
      <li><a href="cart" class="dark-text baskett"><i class="material-icons">shopping_cart</i>
        <span class="badge <?php if(!isset($_SESSION['item']) OR $_SESSION['item'] == 0) echo'hide'; ?>"><?= $_SESSION['item']; ?></span></a></li>
      <li><a href="editprofile" class="nohover dropdown-button" class="dropdown-button" data-activates="dropdown2"><img class="responsive-img" src="users/default.jpg">

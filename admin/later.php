@@ -16,9 +16,10 @@ $resultfirst = $connection->query($queryfirst);
 if ($resultfirst->num_rows > 0) {
   // output data of each row
   while($rowfirst = $resultfirst->fetch_assoc()) {
-        $name = $rowfirst['name'];
-        $total = $rowfirst['total'];
+    $name = $rowfirst['name'];
+    $total = $rowfirst['total'];
 
     ?>
      <h5><?php echo "$name" . " : " . "$total"; ?></h5>
-     <?php }} ?>
+     <?php }} 
+?>

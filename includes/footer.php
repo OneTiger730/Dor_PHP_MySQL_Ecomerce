@@ -10,8 +10,10 @@
 <script src="src/js/wow.min.js"></script>
 <!-- Materialize Js -->
 <script src="src/js/materialize.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script type="module" src="src/js/index.js"></script>
 <script>
-<!-- //SMOOTH SCROLL -->
+//SMOOTH SCROLL
                 $(document).on('click', 'a[href*="#"]:not([href="#"])', function(e) {
                   if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
                     var target = $(this.hash);
@@ -30,7 +32,7 @@
                     }
                   }
                 });
-              <!-- //SMOOTH SCROLL -->
+              OOTH SCROLL
 
 $(document).ready(function() {
   $('select').material_select();
