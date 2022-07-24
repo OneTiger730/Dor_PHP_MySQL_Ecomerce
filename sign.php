@@ -44,7 +44,7 @@ error_reporting(0);
 
         <div class="input-field col s6" style="display: flex; align-items: center">
           <i class="material-icons prefix">email</i>
-          <input id="icon_prefix" type="text" name="email" placeholder="Email" class="validate" required>
+          <input id="icon_prefix" type="email" name="email" placeholder="Email" class="validate" required>
           <!-- <label for="icon_prefix">Email</label> -->
         </div>
 
@@ -116,7 +116,7 @@ error_reporting(0);
 
            <div class="input-field col s12">
              <i class="material-icons prefix">email</i>
-             <input id="icon_prefix" type="text" name="emaillog" class="validate">
+             <input id="icon_prefix" type="email" name="emaillog" class="validate">
              <label for="icon_prefix">Email</label>
            </div>
            <div class="input-field col s12 meh">

@@ -42,7 +42,7 @@ else {
         <div class="row">
           <div class="input-field col s6">
             <i class="material-icons prefix">email</i>
-            <input id="icon_prefix" type="text" placeholder="Email" name="email" value='<?= $email_sess; ?>' class="validate" required>
+            <input id="icon_prefix" type="email" placeholder="Email" name="email" value='<?= $email_sess; ?>' class="validate" required>
             <!-- <label for="icon_prefix">Email</label> -->
           </div>
 

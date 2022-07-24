@@ -34,7 +34,7 @@ else {
      <div class="row">
        <div class="input-field col s12">
          <i class="material-icons prefix">email</i>
-         <input id="icon_prefix" type="text" name="email" class="validate" required>
+         <input id="icon_prefix" type="email" name="email" class="validate" required>
          <label for="icon_prefix">Email</label>
        </div>
 
@@ -56,7 +56,7 @@ else {
                $newemail = $_POST['email'];
                $newpassword = md5($_POST['password']);
 
-              include '../db.php';
+              include './db.php';
               // update info on users Toble
               $queryupdate = "UPDATE users SET email ='$newemail', password ='$newpassword' WHERE id='$sessid'";
               $result = $connection->query($queryupdate);

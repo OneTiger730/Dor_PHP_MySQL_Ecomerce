@@ -32,7 +32,7 @@
                     }
                   }
                 });
-              OOTH SCROLL
+//SMOOTH SCROLL
 
 $(document).ready(function() {
   $('select').material_select();
