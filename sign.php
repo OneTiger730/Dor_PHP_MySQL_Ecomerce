@@ -51,9 +51,14 @@ error_reporting(0);
         <div class="input-field col s6" style="display: flex; align-items: center">
           <select class="icons" name="country">
             <option value=""  disabled selected>Choose your country</option>
-            <option value="Morocco">Morocco</option>
-            <option value="Egypt">Egypt</option>
-            <option value="Algeria">Algeria</option>
+              <?php 
+                $string = file_get_contents("countries.json");
+                $array = json_decode($string);
+
+                foreach($array as $key=>$value) {
+                  echo "<option value='". $value ."'>". $value . "</option>";
+                }
+              ?>
           </select>
           <!-- <label>Country</label> -->
         </div>

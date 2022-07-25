@@ -24,20 +24,20 @@
                        FROM product, command, users
                        WHERE product.id = command.id_produit AND users.id = command.id_user
                        AND command.id_user = '{$_SESSION['id']}' AND command.statut = 'ordered'";
+
     $resultcmd = $connection->query($querycmd);
     if($resultcmd->num_rows > 0){
       while ($rowcmd = $resultcmd->fetch_assoc()) {
-           $productcmd = $rowcmd['product'];
-           $quantitycmd = $rowcmd['quantity'];
-           $pricecmd = $rowcmd['price'];
-           $idcmd = $rowcmd['idcmd'];
-           $firstnamecmd = $_POST['firstname'];
-           $lastnamecmd = $_POST['lastname'];
-           $countrycmd = $_POST['country'];
-           $citycmd = $_POST['city'];
-           $addresscmd = $_POST['address'];
-
-           $idusercmd = $rowcmd['iduser'];
+        $productcmd = $rowcmd['product'];
+        $quantitycmd = $rowcmd['quantity'];
+        $pricecmd = $rowcmd['price'];
+        $idcmd = $rowcmd['idcmd'];
+        $firstnamecmd = $_POST['firstname'];
+        $lastnamecmd = $_POST['lastname'];
+        $countrycmd = $_POST['country'];
+        $citycmd = $_POST['city'];
+        $addresscmd = $_POST['address'];
+        $idusercmd = $rowcmd['iduser'];
 
 
     $price = $pricecmd * $quantitycmd;

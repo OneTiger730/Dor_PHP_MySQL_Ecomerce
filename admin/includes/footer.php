@@ -11,7 +11,7 @@
 <!-- Main Js -->
 <script type="text/javascript" src='src/js/main.js'></script>
 <script type="text/javascript">
-<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+// <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <script type="module" src="src/js/index.js"></script>
 
 </script>

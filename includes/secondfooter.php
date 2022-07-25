@@ -29,7 +29,6 @@
          <div class="footer-copyright">
            <div class="container">
            © <?= Date('Y'); ?> All rights reserved
-           <a class="grey-text text-lighten-4 right animated slideInUp wow">Made with <i class="fa fa-heartbeat animated pulse infinite red-text"></i> By Steven Pollard for Dor</a>
            </div>
          </div>
        </footer>
