@@ -47,6 +47,7 @@ $category = $_GET['id'];
                  </div>
                  <div class="card-content">
                       <h5 class="white-text">$ <?= $price; ?></h5>
+                      <a class="blue-text" href="editp.php?id=<?= $id_product;?>">Edit</a>
                       <a class="blue-text" href="deleteproduct.php?id=<?= $id_product;?>">Delete</a>
                  </div>
              </div>
